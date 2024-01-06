@@ -1,3 +1,13 @@
+# 20240107 several customizations
+
+1. JOptionPane.showMessageDialog没有设置字体，乱码
+2. Main面板jTextField1、3、4、6、8、10没有设置字体，乱码
+3. Main面板不要重置用户id
+4. Broadcast面板 双倍经验按钮没有设置字体，乱码
+
+
+
+
 # AzureV316
 AzureMS v316 KMS, 
 

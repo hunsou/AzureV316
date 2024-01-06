@@ -1,4 +1,4 @@
-package handlers.Chathandler;
+package handlers.ChatHandler;
 
 import org.apache.mina.common.IdleStatus;
 import org.apache.mina.common.IoHandlerAdapter;

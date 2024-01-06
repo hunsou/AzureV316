@@ -12,7 +12,7 @@ import org.apache.mina.transport.socket.nio.SocketAcceptorConfig;
 
 import constants.ServerConstants;
 import handlers.ChatHandler.ChatCodeFactory;
-import handlers.Chathandler.ChatServerHandler;
+import handlers.ChatHandler.ChatServerHandler;
 
 public class BuddyChatServer {
 

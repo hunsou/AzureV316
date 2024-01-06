@@ -10,13 +10,14 @@ import connections.Database.MYSQL;
 import connections.Packets.MainPacketCreator;
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import java.awt.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.concurrent.ScheduledFuture;
-import javax.swing.DefaultListModel;
-import javax.swing.JOptionPane;
+import javax.swing.*;
+
 import launcher.ServerPortInitialize.ChannelServer;
 import launcher.ServerPortInitialize.LoginServer;
 import connections.Packets.UIPacket;
@@ -48,6 +49,7 @@ public class AdminToolStart extends javax.swing.JFrame implements Runnable {
         Ã¤ÆÃ±ÝÁö();
         º¥();
         this.setTitle(ServerConstants.MAPLE_VERSION + " - ÆÊµ¥ÀÏÁî :: ÆÑ°ü¸®±â");
+        UIManager.put("OptionPane.messageFont", new Font("¸¼Àº °íµñ", Font.PLAIN, 12));
     }
 
     /**
@@ -193,6 +195,7 @@ public class AdminToolStart extends javax.swing.JFrame implements Runnable {
 
         jTextField3.setBackground(new java.awt.Color(102, 102, 102));
         jTextField3.setText("Nickname");
+        jTextField3.setFont(new java.awt.Font("¸¼Àº °íµñ", 0, 12)); // NOI18N
 
         jButton2.setBackground(new java.awt.Color(102, 102, 102));
         jButton2.setText("GM On/Off");
@@ -214,6 +217,7 @@ public class AdminToolStart extends javax.swing.JFrame implements Runnable {
                 jTextField4ActionPerformed(evt);
             }
         });
+        jTextField4.setFont(new java.awt.Font("¸¼Àº °íµñ", 0, 12)); // NOI18N
 
         jButton3.setBackground(new java.awt.Color(102, 102, 102));
         jButton3.setText("Give");
@@ -237,6 +241,7 @@ public class AdminToolStart extends javax.swing.JFrame implements Runnable {
                 jTextField6ActionPerformed(evt);
             }
         });
+        jTextField6.setFont(new java.awt.Font("¸¼Àº °íµñ", 0, 12)); // NOI18N
 
         jTextField7.setBackground(new java.awt.Color(102, 102, 102));
         jTextField7.setText("Meso");
@@ -255,6 +260,7 @@ public class AdminToolStart extends javax.swing.JFrame implements Runnable {
 
         jTextField8.setBackground(new java.awt.Color(102, 102, 102));
         jTextField8.setText("Nickname");
+        jTextField8.setFont(new java.awt.Font("¸¼Àº °íµñ", 0, 12)); // NOI18N
 
         jTextField9.setBackground(new java.awt.Color(102, 102, 102));
         jTextField9.setText("Reason(Only if banning)");
@@ -273,6 +279,7 @@ public class AdminToolStart extends javax.swing.JFrame implements Runnable {
 
         jTextField10.setBackground(new java.awt.Color(102, 102, 102));
         jTextField10.setText("Nickname");
+        jTextField10.setFont(new java.awt.Font("¸¼Àº °íµñ", 0, 12)); // NOI18N
 
         jButton6.setBackground(new java.awt.Color(102, 102, 102));
         jButton6.setText("Mute");
@@ -838,6 +845,8 @@ public class AdminToolStart extends javax.swing.JFrame implements Runnable {
                 jButton20ActionPerformed(evt);
             }
         });
+
+        jButton20.setFont(new java.awt.Font("¸¼Àº °íµñ", 1, 12)); // NOI18N
 
         jButton21.setBackground(new java.awt.Color(102, 102, 102));
         jButton21.setText("Pay");
@@ -1459,13 +1468,19 @@ public class AdminToolStart extends javax.swing.JFrame implements Runnable {
     }
 
     public void ÃÊ±âÈ­() {
+        /*
+        20240106ñ¼?Üôé©ñìöÇéÄ?id
+         */
+        /*
         String name = "´Ð³×ÀÓ";
+        //String name = "Nickname";
         jTextField1.setText(name);
         jTextField3.setText(name);
         jTextField4.setText(name);
         jTextField6.setText(name);
         jTextField8.setText("´Ð³×ÀÓ(ÇØÁ¦´Â °èÁ¤)");
         jTextField10.setText(name);
+        */
     }
 
     public void °øÁö»çÇ×(int i, String text) {
