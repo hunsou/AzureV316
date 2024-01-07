@@ -151,7 +151,7 @@ public class Start {
         WorldTimer.getInstance().register(new SkillStatEffectCancelHandler(), 1000);
         WorldTimer.getInstance().register(new MapleMapObjectHandler(), 1000);
         WorldTimer.getInstance().register(new AutoSaver(), 1000 * 60 * 5); // 5 minute interval (auto save)
-	WorldTimer.getInstance().register(new MapleEtcControl(), 1000); // Painting time controller
+	    WorldTimer.getInstance().register(new MapleEtcControl(), 1000); // Painting time controller
 		
         BufferedReader br;
         System.out.println("Buffering");

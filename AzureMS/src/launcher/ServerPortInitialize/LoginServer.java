@@ -78,6 +78,8 @@ public class LoginServer {
         }
 
         WorldTimer.getInstance().start();
+        //java.lang.NumberFormatException: For input string: "20240107022546.0"
+        //MapleRankingWorker.updateAllJobRankings();
         WorldTimer.getInstance().register(new MapleRankingWorker(), 1000 * 60 * 60);
         MapleLoginHelper.getInstance();
         EventLoopGroup bossGroup = new NioEventLoopGroup();

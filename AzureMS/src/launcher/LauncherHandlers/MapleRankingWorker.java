@@ -59,6 +59,8 @@ public class MapleRankingWorker implements Runnable {
                 String lastResult = lastLogin.replaceAll(":", "");
                 lastResult = lastResult.replaceAll("-", "");
                 lastResult = lastResult.replaceAll(" ", "");
+                //lastlogin: 2024-01-07 02:25:46.0
+                lastResult = lastResult.replaceAll("\\.", "");
                 if (Long.parseLong(lastResult) < lastUpdate || result.getInt("loggedin") > 0) {
                     rankMove = result.getInt("rankMove");
                 }
